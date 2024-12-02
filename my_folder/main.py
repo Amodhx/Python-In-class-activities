@@ -1,6 +1,5 @@
 import my_module
 import math
+from my_calculator import addition
 
-print(my_module.add(10,1210))
-print(math.pi)
-print(math.factorial(5))
+print(addition.add(2,2))
