@@ -15,12 +15,13 @@
 #   display the balance afrte edit operations
 
 class BankAccount:
-    def __init__(self,holder,amount):
+    def __init__(self,holder):
         self.account_holder = holder
-        self.amount = amount
+        self.amount = 0
     
     def deposit_funds(self,amount):
-        self.amount += amount
+        if amount > 0:
+            self.amount += amount
     
     def withraw_funds(self,amount):
         if self.amount > amount :
@@ -28,18 +29,18 @@ class BankAccount:
         else :
             print("Cant get this amount!!")
     
-    def fund_manager(self,operation,amount):
-        if operation == "add":
-            self.amount += amount
-        else : 
-            self.amount -= amount
+    # def fund_manager(self,operation,amount):
+    #     if operation == "add":
+    #         self.amount += amount
+    #     else : 
+    #         self.amount -= amount
         
     def display_amount(self):
         print(self.account_holder , " balance is : ", self.amount)
 
 
 
-my_account = BankAccount("Amodh",0)
+my_account = BankAccount("Amodh")
 
 my_account.deposit_funds(5000)
 my_account.deposit_funds(4000)
