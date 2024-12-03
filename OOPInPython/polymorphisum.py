@@ -11,3 +11,21 @@
 #     _age = '' #protected (one ( _ ))
 #     __city = '' #private (two ( _ ))
 
+
+
+class Encapsulation:
+    __private_var = 'Private'
+
+    def set_value(self,value):
+        self.__private_var = value
+    def get_value(self):
+        return self.__private_var
+
+
+
+class_instance = Encapsulation()
+print(class_instance.get_value())
+class_instance.set_value("SETTED VALUE")
+
+print(class_instance.get_value())
+
