@@ -19,18 +19,24 @@
 
 
 
-# Exercise 01 
-with open("my_file1.txt",'w') as my_file:
-    my_file.write("Hello world \nMy man \n")
-    my_file.write("Hey man \n")
-    value = ["Amodh \n","amodh \n","amodh \n"]
-    my_file.writelines(value)
+# # Exercise 01 
+# with open("my_file1.txt",'w') as my_file:
+#     my_file.write("Hello world \nMy man \n")
+#     my_file.write("Hey man \n")
+#     value = ["Amodh \n","amodh \n","amodh \n"]
+#     my_file.writelines(value)
 
-with open("my_file1.txt",'a') as my_file:
-    value = ["Amodh \n","amodh \n","amodh"]
-    my_file.writelines(value)
+# with open("my_file1.txt",'a') as my_file:
+#     value = ["Amodh \n","amodh \n","amodh"]
+#     my_file.writelines(value)
 
-with open("my_file1.txt",'r') as my_file:
-    print(my_file.read())
+# with open("my_file1.txt",'r') as my_file:
+#     print(my_file.read())
 
-# Exercise 02 
+
+
+
+
+# JSON is a langauge independentant obk
+# Java script Object notation
+
