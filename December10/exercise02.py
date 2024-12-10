@@ -33,7 +33,7 @@ def get_values_to_add():
     contact = input("1 . Enter a Contact:  ")
     email = input("1 . Enter a Email :  ")
     add_contact(name+", "+contact+", "+email)
-    print("")
+    print("\n")
     call_functions()
 
 def call_functions():
@@ -41,6 +41,7 @@ def call_functions():
     print("2 . Enter (2) for View contact ")
     print("3 . Enter (3) for Exit ")
     value = input("Enter a number :")
+    print("\n")
     if value == "1" : 
         get_values_to_add()
     elif value == "2" :
