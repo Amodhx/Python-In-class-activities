@@ -45,8 +45,8 @@ def check_score():
 
 def add_new_student():
     students.append({
-        "name" : "Ramesh",
-        "score" : 56
+        "name" : "Eranga",
+        "score" : 86
     })
 def save_data():
     with open('students.json','w') as student_json:
